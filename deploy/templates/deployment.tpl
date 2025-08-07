@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cloud-platform-pingdom-default-ingress-check-deployment
-  namespace: ${REGISTRY}/${REPOSITORY}:${IMAGE_TAG}
+  namespace: ${NAMESPACE}
 spec:
   replicas: 2
   selector:
