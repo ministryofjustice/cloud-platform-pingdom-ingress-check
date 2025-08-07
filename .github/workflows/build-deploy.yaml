@@ -28,7 +28,7 @@ jobs:
       - run: |
           cat deploy/templates/deployment.tpl | envsubst > deploy/deployment.yml
           cat deploy/templates/ingress.tpl | envsubst > deploy/ingress.yml
-          cat deploy/templates/service.tpl | envsubst > deploy/service.yml
+          cat deploy/templates/svc.tpl | envsubst > deploy/svc.yml
         env:
           IMAGE_TAG: ${{ github.sha }}
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
