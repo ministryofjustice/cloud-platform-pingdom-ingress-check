@@ -8,6 +8,10 @@
 
 ```
 export GIN_MODE="[debug/test/release]"
+```
 
+- and run the thing!
+
+```
 run main.go
 ```
